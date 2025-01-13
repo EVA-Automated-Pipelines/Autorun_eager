@@ -3,6 +3,26 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.0] - XX/XX/XXXX
+
+### `Added`
+
+- `conf/Autorun.config`: Use hard links when publishing results, instead of copying files.
+- `scripts/create_poseidon_release.sh`: New script to create large releases of the entire TF processed data in Poseidon format.
+- `scripts/clear_results.sh`: Now uses pyPandoraHelper to infer Site_ID from Ind_ID.
+- `scripts/clear_work_dirs.sh`: Now uses pyPandoraHelper to infer Site_ID from Ind_ID.
+- `scripts/ethical_sample_scrub.sh`: Now uses pyPandoraHelper to infer Site_ID from Ind_ID.
+- `scripts/run_Eager.sh`: Now uses pyPandoraHelper to infer Site_ID from Ind_ID.
+- `scripts/update_poseidon_packages.sh`: Now uses pyPandoraHelper to infer Site_ID from Ind_ID.
+
+### `Fixed`
+
+### `Dependencies`
+
+- pyPandoraHelper=0.1.0
+
+### `Deprecated`
+
 ## [1.5.0] - 30/09/2024
 
 ### `Added`
@@ -15,6 +35,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `scripts/ethical_sample_scrub.sh`: Add RP analysis type for ethical sample scrubbing.
   - `scripts/clear_work_dirs.sh`: Add RP analysis type for work directory clearing.
   - `scripts/clear_results.sh`: Add RP analysis type for results directory clearing.
+- `scripts/update_poseidon_packages.sh`: Bump version for new release.
+- `README.md`: Updated to list new state of the pipeline.
 
 ### `Fixed`
 
